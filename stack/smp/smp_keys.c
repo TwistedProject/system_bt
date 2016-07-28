@@ -77,7 +77,7 @@ static const tSMP_ACT smp_encrypt_action[] =
 void smp_debug_print_nbyte_little_endian(UINT8 *p, const UINT8 *key_name, UINT8 len)
 {
 #if SMP_DEBUG == TRUE
-    int     ind, x;
+    int     ind;
     int     col_count = 32;
     int     row_count;
     UINT8   p_buf[512];
@@ -110,7 +110,6 @@ void smp_debug_print_nbyte_big_endian (UINT8 *p, const UINT8 *key_name, UINT8 le
     int ind = 0;
     int  ncols = 32; /* num entries in one line */
     int  nrows;      /* num lines */
-    int  x;
 
     for (int row = 0; row <  nrows; row++)
     {
